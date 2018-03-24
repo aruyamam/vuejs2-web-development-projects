@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  margin: -3px;
+  padding-bottom: 1px;
+}
+
+#notebook > * {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > * {
+    font: auto 0 0;
+  }
+}
+
+.side-bar {
+  width: 20%;
+  background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button,
+.note.selected {
+  background-color: #40b883;
+  color: white;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #63c89b;
+}
+
+
+button,
+input {
+  height: 34px;
+}
+
+.main,
+.preview {
+  width: 40%;
+}
+
+.toolbar {
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0 4px;
+  font-family: monospace;
+}
+
+textarea,
+.notes,
+.preview {
+  flex: auto 1 1;
+  overflow: auto;
+}
+
+.preview {
+  padding: 12px;
+  box-sizing: border-box;
+  border-left: 4px solid #f8f8f8;
+}
+
+.preview p:first-child {
+  margin-top: 0;
+}
+
+a {
+  color: #40b883;
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px 0 4px;
+  color: #40b883;
+}

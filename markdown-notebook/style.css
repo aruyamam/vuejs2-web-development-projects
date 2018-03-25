@@ -21,7 +21,7 @@ body {
   height: 100%;
 
   > * {
-    font: auto 0 0;
+    flex: auto 0 0;
   }
 }
 
@@ -31,6 +31,18 @@ body {
   box-sizing: border-box;
 }
 
+.note {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.note:hover {
+  background-color: #ade2ca;
+}
+
+.note .icon {
+  float: right;
+}
 
 button,
 input,
@@ -39,7 +51,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   box-sizing: border-box;
-  outline: none;
+  outline: none !important;
 }
 
 button,
@@ -60,6 +72,19 @@ button:hover {
   background: #63c89b;
 }
 
+input {
+  border: 2px solid #ade2ca;
+  border-radius: 3px;
+  padding: 6px 10px;
+  background: #f0f9f5;
+  color: #666;
+}
+
+input:focus {
+  border-color: #40b883;
+  background: white;
+  color: black;
+}
 
 button,
 input {
@@ -74,6 +99,11 @@ input {
 .toolbar {
   padding: 4px;
   box-sizing: border-box;
+}
+
+.status-bar {
+  color: #999;
+  font-style: italic;
 }
 
 textarea {
@@ -110,4 +140,21 @@ h2,
 h3 {
   margin: 10px 0 4px;
   color: #40b883;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
 }
